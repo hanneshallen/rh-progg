@@ -1,0 +1,5 @@
+# Mac os stuff
+.DS_Store
+
+# Don't include p5 libs
+lib
