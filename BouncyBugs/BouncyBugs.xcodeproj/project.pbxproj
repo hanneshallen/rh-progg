@@ -17,6 +17,10 @@
 		EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */; };
 		EC566DC21E8C26BA0061E668 /* BouncyBugsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DC11E8C26BA0061E668 /* BouncyBugsTests.swift */; };
 		EC566DCD1E8C26BA0061E668 /* BouncyBugsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DCC1E8C26BA0061E668 /* BouncyBugsUITests.swift */; };
+		EC566DDB1E8C27AB0061E668 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC566DDA1E8C27AB0061E668 /* StartScene.sks */; };
+		EC566DDD1E8C280D0061E668 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DDC1E8C280D0061E668 /* StartScene.swift */; };
+		EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */; };
+		EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DE01E8C2B580061E668 /* GameplayScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		EC566DC81E8C26BA0061E668 /* BouncyBugsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncyBugsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC566DCC1E8C26BA0061E668 /* BouncyBugsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncyBugsUITests.swift; sourceTree = "<group>"; };
 		EC566DCE1E8C26BA0061E668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC566DDA1E8C27AB0061E668 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		EC566DDC1E8C280D0061E668 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		EC566DE01E8C2B580061E668 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,12 @@
 			children = (
 				EC566DA61E8C26BA0061E668 /* AppDelegate.swift */,
 				EC566DA81E8C26BA0061E668 /* GameScene.sks */,
+				EC566DDA1E8C27AB0061E668 /* StartScene.sks */,
 				EC566DAA1E8C26BA0061E668 /* Actions.sks */,
+				EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */,
 				EC566DAC1E8C26BA0061E668 /* GameScene.swift */,
+				EC566DE01E8C2B580061E668 /* GameplayScene.swift */,
+				EC566DDC1E8C280D0061E668 /* StartScene.swift */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
 				EC566DB31E8C26BA0061E668 /* Assets.xcassets */,
@@ -244,6 +256,8 @@
 				EC566DB21E8C26BA0061E668 /* Main.storyboard in Resources */,
 				EC566DA91E8C26BA0061E668 /* GameScene.sks in Resources */,
 				EC566DB41E8C26BA0061E668 /* Assets.xcassets in Resources */,
+				EC566DDB1E8C27AB0061E668 /* StartScene.sks in Resources */,
+				EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */,
 				EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */,
 				EC566DAB1E8C26BA0061E668 /* Actions.sks in Resources */,
 			);
@@ -271,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC566DAD1E8C26BA0061E668 /* GameScene.swift in Sources */,
+				EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */,
 				EC566DAF1E8C26BA0061E668 /* GameViewController.swift in Sources */,
 				EC566DA71E8C26BA0061E668 /* AppDelegate.swift in Sources */,
+				EC566DDD1E8C280D0061E668 /* StartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
