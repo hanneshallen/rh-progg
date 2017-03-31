@@ -14,11 +14,27 @@ class BugController {
     private let maxX: CGFloat = 300.0
     
     func spawnBug() -> SKSpriteNode {
-        let item = SKSpriteNode(imageNamed: "Bug")
+        let item = SKSpriteNode(imageNamed: "Rambug")
+        
+        //RANIMATIONMUS
+        var textureAtlas = SKTextureAtlas()
+        var textureArray = [SKTexture]()
+        
+        
+        textureAtlas = SKTextureAtlas(named: "Rambug")
+        for i in 1...textureAtlas.textureNames.count {
+            let newName = "greenbug-0\(i).png"
+            textureArray.append(SKTexture(imageNamed: newName))
+        }
+        
+        
+        item.run(SKAction.repeatForever(SKAction.animate(with: textureArray, timePerFrame: 0.3)))
+        
+        
         
         item.zPosition = 2
         item.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        item.setScale(0.3)
+        item.setScale(2)
         item.physicsBody = SKPhysicsBody(circleOfRadius: item.size.height / 2)
         item.physicsBody?.isDynamic = true
         item.physicsBody?.velocity = CGVector(dx: 0, dy: -400)
@@ -32,6 +48,14 @@ class BugController {
         item.physicsBody?.allowsRotation = false
         item.position.y = 800
         item.position.x = random(between: minX, and: maxX)
+        
+        
+        
+        //Snurra runt runt runt
+        let oneRevolution:SKAction = SKAction.rotate(byAngle: CGFloat.pi, duration: 1)
+        let repeatRotation:SKAction = SKAction.repeatForever(oneRevolution)
+        item.run(repeatRotation)
+        
         
         return item
     }

@@ -10,14 +10,20 @@ import SpriteKit
 
 class GameplayScene: SKScene {
 
+    
+    //HANNES TRAMSKOD FÖR MASSA SKIT
     private var bugController: BugController!
     var splinePoints = [CGPoint]()
     var line: SKShapeNode?
     
     override func didMove(to view: SKView) {
+        
+        //Tramshannes
         bugController = BugController()
         
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: true)
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -22,6 +22,7 @@
 		EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */; };
 		EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DE01E8C2B580061E668 /* GameplayScene.swift */; };
 		EC566DE41E8C3CB40061E668 /* BugController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DE31E8C3CB40061E668 /* BugController.swift */; };
+		F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		EC566DE01E8C2B580061E668 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
 		EC566DE31E8C3CB40061E668 /* BugController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugController.swift; sourceTree = "<group>"; };
+		F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Rambug.atlas; path = Assets.xcassets/Rambug.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				EC566DA61E8C26BA0061E668 /* AppDelegate.swift */,
 				EC566DE21E8C3C770061E668 /* Scenes */,
 				EC566DAA1E8C26BA0061E668 /* Actions.sks */,
+				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DE31E8C3CB40061E668 /* BugController.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
@@ -269,6 +272,7 @@
 				EC566DB41E8C26BA0061E668 /* Assets.xcassets in Resources */,
 				EC566DDB1E8C27AB0061E668 /* StartScene.sks in Resources */,
 				EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */,
+				F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */,
 				EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */,
 				EC566DAB1E8C26BA0061E668 /* Actions.sks in Resources */,
 			);
@@ -547,6 +551,7 @@
 				EC566DD31E8C26BA0061E668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC566DD41E8C26BA0061E668 /* Build configuration list for PBXNativeTarget "BouncyBugsTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +560,7 @@
 				EC566DD61E8C26BA0061E668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC566DD71E8C26BA0061E668 /* Build configuration list for PBXNativeTarget "BouncyBugsUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +569,7 @@
 				EC566DD91E8C26BA0061E668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
