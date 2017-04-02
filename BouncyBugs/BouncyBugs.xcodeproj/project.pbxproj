@@ -13,16 +13,16 @@
 		EC566DAD1E8C26BA0061E668 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DAC1E8C26BA0061E668 /* GameScene.swift */; };
 		EC566DAF1E8C26BA0061E668 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DAE1E8C26BA0061E668 /* GameViewController.swift */; };
 		EC566DB21E8C26BA0061E668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC566DB01E8C26BA0061E668 /* Main.storyboard */; };
-		EC566DB41E8C26BA0061E668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC566DB31E8C26BA0061E668 /* Assets.xcassets */; };
 		EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */; };
 		EC566DC21E8C26BA0061E668 /* BouncyBugsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DC11E8C26BA0061E668 /* BouncyBugsTests.swift */; };
 		EC566DCD1E8C26BA0061E668 /* BouncyBugsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DCC1E8C26BA0061E668 /* BouncyBugsUITests.swift */; };
 		EC566DDB1E8C27AB0061E668 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC566DDA1E8C27AB0061E668 /* StartScene.sks */; };
 		EC566DDD1E8C280D0061E668 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DDC1E8C280D0061E668 /* StartScene.swift */; };
-		EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */; };
 		EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DE01E8C2B580061E668 /* GameplayScene.swift */; };
 		EC566DE41E8C3CB40061E668 /* BugController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC566DE31E8C3CB40061E668 /* BugController.swift */; };
 		F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */; };
+		F46EADE01E8EA1B800309E68 /* BugCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */; };
+		F46EADE21E8FCCBE00309E68 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		EC566DAC1E8C26BA0061E668 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		EC566DAE1E8C26BA0061E668 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EC566DB11E8C26BA0061E668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC566DB31E8C26BA0061E668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC566DB61E8C26BA0061E668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC566DB81E8C26BA0061E668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC566DBD1E8C26BA0061E668 /* BouncyBugsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncyBugsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,10 +60,11 @@
 		EC566DCE1E8C26BA0061E668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC566DDA1E8C27AB0061E668 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		EC566DDC1E8C280D0061E668 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
-		EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		EC566DE01E8C2B580061E668 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
 		EC566DE31E8C3CB40061E668 /* BugController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugController.swift; sourceTree = "<group>"; };
 		F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Rambug.atlas; path = Assets.xcassets/Rambug.atlas; sourceTree = "<group>"; };
+		F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugCatcher.swift; sourceTree = "<group>"; };
+		F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DE31E8C3CB40061E668 /* BugController.swift */,
+				F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
-				EC566DB31E8C26BA0061E668 /* Assets.xcassets */,
 				EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */,
 				EC566DB81E8C26BA0061E668 /* Info.plist */,
 			);
@@ -153,7 +153,7 @@
 				EC566DDC1E8C280D0061E668 /* StartScene.swift */,
 				EC566DDA1E8C27AB0061E668 /* StartScene.sks */,
 				EC566DE01E8C2B580061E668 /* GameplayScene.swift */,
-				EC566DDE1E8C2B3D0061E668 /* GameplayScene.sks */,
+				F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */,
 				EC566DAC1E8C26BA0061E668 /* GameScene.swift */,
 				EC566DA81E8C26BA0061E668 /* GameScene.sks */,
 			);
@@ -269,10 +269,9 @@
 			files = (
 				EC566DB21E8C26BA0061E668 /* Main.storyboard in Resources */,
 				EC566DA91E8C26BA0061E668 /* GameScene.sks in Resources */,
-				EC566DB41E8C26BA0061E668 /* Assets.xcassets in Resources */,
 				EC566DDB1E8C27AB0061E668 /* StartScene.sks in Resources */,
-				EC566DDF1E8C2B3D0061E668 /* GameplayScene.sks in Resources */,
 				F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */,
+				F46EADE21E8FCCBE00309E68 /* GameplayScene.sks in Resources */,
 				EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */,
 				EC566DAB1E8C26BA0061E668 /* Actions.sks in Resources */,
 			);
@@ -304,6 +303,7 @@
 				EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */,
 				EC566DAF1E8C26BA0061E668 /* GameViewController.swift in Sources */,
 				EC566DA71E8C26BA0061E668 /* AppDelegate.swift in Sources */,
+				F46EADE01E8EA1B800309E68 /* BugCatcher.swift in Sources */,
 				EC566DDD1E8C280D0061E668 /* StartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
