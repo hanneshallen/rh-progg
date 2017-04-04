@@ -42,10 +42,19 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         
         bugcatcher.physicsBody?.contactTestBitMask = 2
         
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
+        view.addGestureRecognizer(tapGesture)
         
         //Border
         
+    }
+    
+    func didTap(_ rec: UITapGestureRecognizer) {
+        let viewTouchLocation = rec.location(in: self.view)
+        guard let sceneTouchPoint = scene?.convertPoint(fromView: viewTouchLocation),
+            let touchedNode = scene?.atPoint(sceneTouchPoint),
+            touchedNode.name == "Line" else { return }
+        touchedNode.removeFromParent()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -72,6 +81,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         newLine.physicsBody?.density = 0.0
         newLine.physicsBody?.angularDamping = 0.0
         newLine.physicsBody?.allowsRotation = false
+        newLine.name = "Line"
     
         activeDrawingLine?.removeFromParent()
         activeDrawingLine = newLine
