@@ -23,6 +23,7 @@
 		F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */; };
 		F46EADE01E8EA1B800309E68 /* BugCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */; };
 		F46EADE21E8FCCBE00309E68 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */; };
+		F46EADE41E913DD800309E68 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EADE31E913DD800309E68 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Rambug.atlas; path = Assets.xcassets/Rambug.atlas; sourceTree = "<group>"; };
 		F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugCatcher.swift; sourceTree = "<group>"; };
 		F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		F46EADE31E913DD800309E68 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				EC566DAA1E8C26BA0061E668 /* Actions.sks */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DE31E8C3CB40061E668 /* BugController.swift */,
+				F46EADE31E913DD800309E68 /* Extensions.swift */,
 				F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
 				EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */,
@@ -301,6 +304,7 @@
 				EC566DE41E8C3CB40061E668 /* BugController.swift in Sources */,
 				EC566DAD1E8C26BA0061E668 /* GameScene.swift in Sources */,
 				EC566DE11E8C2B580061E668 /* GameplayScene.swift in Sources */,
+				F46EADE41E913DD800309E68 /* Extensions.swift in Sources */,
 				EC566DAF1E8C26BA0061E668 /* GameViewController.swift in Sources */,
 				EC566DA71E8C26BA0061E668 /* AppDelegate.swift in Sources */,
 				F46EADE01E8EA1B800309E68 /* BugCatcher.swift in Sources */,

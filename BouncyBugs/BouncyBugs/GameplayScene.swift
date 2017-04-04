@@ -44,8 +44,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         
         //Border
         
-        
     }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         splinePoints.removeAll()
@@ -54,8 +55,16 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        splinePoints.append((touches.first?.location(in: self))!)
-        let ground = SKShapeNode(splinePoints: &splinePoints,
+        
+        guard let point = touches.first?.location(in: self) else { return }
+        
+        if let lastPoint = splinePoints.last,
+            point.distance(toPoint: lastPoint) < 100 {
+            return
+        }
+        
+        splinePoints.append(point)
+        let ground = SKShapeNode(points: &splinePoints,
                                  count: splinePoints.count)
         ground.lineWidth = 5
         ground.physicsBody = SKPhysicsBody(edgeChainFrom: ground.path!)
@@ -63,8 +72,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         ground.physicsBody?.isDynamic = false
         ground.physicsBody?.friction = 0.0
         ground.physicsBody?.linearDamping = 0.0
-        ground.physicsBody?.mass = 0.0
-        ground.physicsBody?.density = 0.0
+        ground.physicsBody?.mass = 1000.0
+        ground.physicsBody?.density = 1000.0
         ground.physicsBody?.angularDamping = 0.0
         ground.physicsBody?.allowsRotation = false
         
@@ -85,7 +94,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     //COLLISIONMUS
     func didBegin(_ contact: SKPhysicsContact) {
         
-        var firstBody = SKPhysicsBody()
+        let firstBody = SKPhysicsBody()
         var secondBody = SKPhysicsBody()
         
         if contact.bodyA.node?.name == "bugcatcher" {
