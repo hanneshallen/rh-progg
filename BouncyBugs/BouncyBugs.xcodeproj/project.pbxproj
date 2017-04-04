@@ -118,13 +118,13 @@
 				EC566DA61E8C26BA0061E668 /* AppDelegate.swift */,
 				EC566DE21E8C3C770061E668 /* Scenes */,
 				EC566DAA1E8C26BA0061E668 /* Actions.sks */,
-				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DE31E8C3CB40061E668 /* BugController.swift */,
 				F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
 				EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */,
 				EC566DB81E8C26BA0061E668 /* Info.plist */,
+				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 			);
 			path = BouncyBugs;
 			sourceTree = "<group>";
