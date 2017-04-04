@@ -133,13 +133,13 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func removeBugs() {
-//        for child in children {
-//            if let name = child.name, name.contains("bug") {
-//                if child.position.y < scene!.frame.height - 100 {
-//                    child.removeFromParent()
-//                }
-//            }
-//        }
+        for child in children {
+            if let name = child.name, name.lowercased().contains("_bug") {
+                if child.position.y < scene!.frame.height - 100 {
+                    child.removeFromParent()
+                }
+            }
+        }
     }
     
     
