@@ -19,30 +19,30 @@ class BugController: SKSpriteNode {
         
         if (newNumber < 50) {
         
-            let item = SKSpriteNode(imageNamed:"Rambug")
+            let item = SKSpriteNode(imageNamed:"greenbug-1.png")
         
             //RANIMATIONMUS
-            var textureAtlas = SKTextureAtlas()
-            var textureArray = [SKTexture]()
+           // var textureAtlas = SKTextureAtlas()
+           // var textureArray = [SKTexture]()
         
-            textureAtlas = SKTextureAtlas(named: "Rambug")
-            for i in 1...textureAtlas.textureNames.count {
-            let newName = "greenbug-0\(i).png"
-            textureArray.append(SKTexture(imageNamed: newName))
-            }
+           // textureAtlas = SKTextureAtlas(named: "Rambug")
+           // for i in 1...textureAtlas.textureNames.count {
+           // let newName = "greenbug-0\(i).png"
+           // textureArray.append(SKTexture(imageNamed: newName))
+            //}
         
         
-            item.run(SKAction.repeatForever(SKAction.animate(with: textureArray, timePerFrame: 0.3)))
+            //item.run(SKAction.repeatForever(SKAction.animate(with: textureArray, timePerFrame: 0.3)))
         
         
             //NOOBPROPERTIES
         
             item.zPosition = 2
             item.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-            item.setScale(1)
+            item.setScale(0.2)
             item.physicsBody = SKPhysicsBody(circleOfRadius: item.size.height / 2)
             item.physicsBody?.isDynamic = true
-            item.physicsBody?.velocity = CGVector(dx: 0, dy: -200)
+            item.physicsBody?.velocity = CGVector(dx: 0, dy: -300)
             item.physicsBody?.restitution = 1.0
             item.physicsBody?.friction = 0.0
             item.physicsBody?.linearDamping = 0.0
@@ -77,10 +77,10 @@ class BugController: SKSpriteNode {
             
             item.zPosition = 2
             item.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-            item.setScale(0.1)
+            item.setScale(0.2)
             item.physicsBody = SKPhysicsBody(circleOfRadius: item.size.height / 2)
             item.physicsBody?.isDynamic = true
-            item.physicsBody?.velocity = CGVector(dx: 0, dy: -200)
+            item.physicsBody?.velocity = CGVector(dx: 0, dy: -300)
             item.physicsBody?.restitution = 1.0
             item.physicsBody?.friction = 0.0
             item.physicsBody?.linearDamping = 0.0
@@ -106,7 +106,6 @@ class BugController: SKSpriteNode {
             return item
             
         }
-        
     }
     
     func random(between first: CGFloat, and second: CGFloat) -> CGFloat {

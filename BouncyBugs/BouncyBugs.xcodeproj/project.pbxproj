@@ -122,7 +122,6 @@
 				EC566DA61E8C26BA0061E668 /* AppDelegate.swift */,
 				EC566DE21E8C3C770061E668 /* Scenes */,
 				EC566DAA1E8C26BA0061E668 /* Actions.sks */,
-				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 				EC566DAE1E8C26BA0061E668 /* GameViewController.swift */,
 				EC566DE31E8C3CB40061E668 /* BugController.swift */,
 				F46EADE31E913DD800309E68 /* Extensions.swift */,
@@ -131,6 +130,7 @@
 				F4D379B81E94297700CE5C9B /* Assets.xcassets */,
 				EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */,
 				EC566DB81E8C26BA0061E668 /* Info.plist */,
+				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
 			);
 			path = BouncyBugs;
 			sourceTree = "<group>";
@@ -234,6 +234,7 @@
 				TargetAttributes = {
 					EC566DA21E8C26BA0061E668 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = G9LHUAAZMX;
 						ProvisioningStyle = Automatic;
 					};
 					EC566DBC1E8C26BA0061E668 = {
@@ -464,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
 				INFOPLIST_FILE = BouncyBugs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -477,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
 				INFOPLIST_FILE = BouncyBugs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;
@@ -531,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;
