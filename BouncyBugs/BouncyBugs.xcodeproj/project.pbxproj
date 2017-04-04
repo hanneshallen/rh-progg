@@ -231,6 +231,7 @@
 				TargetAttributes = {
 					EC566DA21E8C26BA0061E668 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = G9LHUAAZMX;
 						ProvisioningStyle = Automatic;
 					};
 					EC566DBC1E8C26BA0061E668 = {
@@ -460,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
 				INFOPLIST_FILE = BouncyBugs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -473,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
 				INFOPLIST_FILE = BouncyBugs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

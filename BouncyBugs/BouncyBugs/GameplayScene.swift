@@ -13,24 +13,26 @@ import UIKit
 
 class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
-    
-    
     var bugcatcher = SKShapeNode()
     
     //HANNES TRAMSKOD FÖR MASSA SKIT
     private var bugController: BugController!
     var splinePoints = [CGPoint]()
-    var line: SKShapeNode?
+    var activeDrawingLine: SKShapeNode?
     
     override func didMove(to view: SKView) {
         
         
         self.physicsWorld.contactDelegate = self
+        self.physicsWorld.speed = 1.0
         
         //Tramshannes
         bugController = BugController()
         
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: true)
+        // Set timeer to spawn new bugs
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: true)
+        // Set timeer to remove old bugs
+        Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(removeBugs), userInfo: nil, repeats: true)
         
         
         //rasmus coola bugcatcherrektangel
@@ -46,52 +48,48 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         splinePoints.removeAll()
-        self.line?.removeFromParent()
-        splinePoints.append((touches.first?.location(in: self))!)
+        guard let touch = touches.first else { return }
+        splinePoints.append(touch.location(in: self))
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         guard let point = touches.first?.location(in: self) else { return }
-        
         if let lastPoint = splinePoints.last,
-            point.distance(toPoint: lastPoint) < 100 {
+            point.distance(toPoint: lastPoint) < 25 {
             return
         }
-        
         splinePoints.append(point)
-        let ground = SKShapeNode(points: &splinePoints,
-                                 count: splinePoints.count)
-        ground.lineWidth = 5
-        ground.physicsBody = SKPhysicsBody(edgeChainFrom: ground.path!)
-        ground.physicsBody?.restitution = 1.0
-        ground.physicsBody?.isDynamic = false
-        ground.physicsBody?.friction = 0.0
-        ground.physicsBody?.linearDamping = 0.0
-        ground.physicsBody?.mass = 1000.0
-        ground.physicsBody?.density = 1000.0
-        ground.physicsBody?.angularDamping = 0.0
-        ground.physicsBody?.allowsRotation = false
-        
-        line?.removeFromParent()
-        line = ground
-        self.scene?.addChild(ground)
+        let newLine = SKShapeNode(points: &splinePoints, count: splinePoints.count)
+        newLine.lineWidth = 5
+        newLine.physicsBody = SKPhysicsBody(edgeChainFrom: newLine.path!)
+        newLine.physicsBody?.restitution = 1.0
+        newLine.physicsBody?.isDynamic = false
+        newLine.physicsBody?.friction = 0.0
+        newLine.physicsBody?.linearDamping = 0.0
+        newLine.physicsBody?.mass = 0.0
+        newLine.physicsBody?.density = 0.0
+        newLine.physicsBody?.angularDamping = 0.0
+        newLine.physicsBody?.allowsRotation = false
+    
+        activeDrawingLine?.removeFromParent()
+        activeDrawingLine = newLine
+        scene?.addChild(newLine)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        applyFadeOutAction(onLine: activeDrawingLine)
+        activeDrawingLine = nil
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        splinePoints.removeAll()
-        self.line?.removeFromParent()
+        applyFadeOutAction(onLine: activeDrawingLine)
+        activeDrawingLine = nil
     }
     
+    // MARK: - Physics Contact Delegate
     
-    //COLLISIONMUS
     func didBegin(_ contact: SKPhysicsContact) {
         
         let firstBody = SKPhysicsBody()
@@ -106,12 +104,33 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    // MARK: - Private Funtions
+    
     
     func spawnBug() {
         self.scene?.addChild(bugController.spawnBug())
         print("spawn")
     }
     
+    func applyFadeOutAction(onLine line: SKShapeNode?) {
+        line?.run(
+            SKAction.sequence([
+                SKAction.wait(forDuration: (1.0)),
+                SKAction.fadeAlpha(to: 0, duration: 0.3),
+                SKAction.removeFromParent()
+                ])
+        )
+    }
+    
+    func removeBugs() {
+//        for child in children {
+//            if let name = child.name, name.contains("bug") {
+//                if child.position.y < scene!.frame.height - 100 {
+//                    child.removeFromParent()
+//                }
+//            }
+//        }
+    }
     
     
 }

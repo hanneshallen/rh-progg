@@ -41,7 +41,7 @@ class BugController: SKSpriteNode {
         item.physicsBody?.velocity = CGVector(dx: 0, dy: -200)
         item.physicsBody?.restitution = 1.0
         item.physicsBody?.friction = 0.0
-        item.physicsBody?.linearDamping = 0.0
+        item.physicsBody?.linearDamping = 0.02
         item.physicsBody?.mass = 0.0
         item.physicsBody?.charge = 0.0
         item.physicsBody?.density = 0.0
