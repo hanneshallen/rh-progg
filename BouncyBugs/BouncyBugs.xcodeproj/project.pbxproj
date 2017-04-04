@@ -24,6 +24,7 @@
 		F46EADE01E8EA1B800309E68 /* BugCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */; };
 		F46EADE21E8FCCBE00309E68 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */; };
 		F46EADE41E913DD800309E68 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EADE31E913DD800309E68 /* Extensions.swift */; };
+		F4D379B91E94297700CE5C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D379B81E94297700CE5C9B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugCatcher.swift; sourceTree = "<group>"; };
 		F46EADE11E8FCCBE00309E68 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		F46EADE31E913DD800309E68 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4D379B81E94297700CE5C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BouncyBugs/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				F46EADE31E913DD800309E68 /* Extensions.swift */,
 				F46EADDF1E8EA1B800309E68 /* BugCatcher.swift */,
 				EC566DB01E8C26BA0061E668 /* Main.storyboard */,
+				F4D379B81E94297700CE5C9B /* Assets.xcassets */,
 				EC566DB51E8C26BA0061E668 /* LaunchScreen.storyboard */,
 				EC566DB81E8C26BA0061E668 /* Info.plist */,
 				F439EEDE1E8E9AF700F88A27 /* Rambug.atlas */,
@@ -277,6 +280,7 @@
 				F439EEDF1E8E9AF700F88A27 /* Rambug.atlas in Resources */,
 				F46EADE21E8FCCBE00309E68 /* GameplayScene.sks in Resources */,
 				EC566DB71E8C26BA0061E668 /* LaunchScreen.storyboard in Resources */,
+				F4D379B91E94297700CE5C9B /* Assets.xcassets in Resources */,
 				EC566DAB1E8C26BA0061E668 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;
@@ -530,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;

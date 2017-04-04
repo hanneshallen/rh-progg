@@ -14,6 +14,7 @@ import UIKit
 class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
     var bugcatcher = SKShapeNode()
+    var bugcatcher_blue = SKShapeNode()
     
     //HANNES TRAMSKOD FÖR MASSA SKIT
     private var bugController: BugController!
@@ -36,12 +37,18 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         
         
         //rasmus coola bugcatcherrektangel
-        bugcatcher = self.childNode(withName: "bugcatcher") as! SKShapeNode
+        bugcatcher = self.childNode(withName: "bugcatcher_green") as! SKShapeNode
         bugcatcher.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: bugcatcher.frame.size.width, height: bugcatcher.frame.size.height))
         bugcatcher.physicsBody?.isDynamic = false
         
         bugcatcher.physicsBody?.contactTestBitMask = 2
         
+        bugcatcher_blue = self.childNode(withName: "bugcatcher_blue") as! SKShapeNode
+        bugcatcher_blue.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: bugcatcher_blue.frame.size.width, height: bugcatcher_blue.frame.size.height))
+        bugcatcher_blue.physicsBody?.isDynamic = false
+        
+        bugcatcher_blue.physicsBody?.contactTestBitMask = 2
+
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
         view.addGestureRecognizer(tapGesture)
         
@@ -105,17 +112,35 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         let firstBody = SKPhysicsBody()
         var secondBody = SKPhysicsBody()
         
-        if contact.bodyA.node?.name == "bugcatcher" {
+        if contact.bodyA.node?.name == "bugcatcher_green" && contact.bodyB.node?.name == "greenbug" {
             secondBody = contact.bodyB
             secondBody.node?.removeFromParent()
-            print("call")
-        } else {
-            firstBody.node?.removeFromParent()
+            //UPDATE SCORE
+            
+        } else if contact.bodyA.node?.name == "bugcatcher_blue" && contact.bodyB.node?.name == "greenbug" {
+            secondBody = contact.bodyB
+            
+            //NU DOG DU
+            resetGame()
+            print("grönblå")
+            
+        } else if contact.bodyA.node?.name == "bugcatcher_green" && contact.bodyB.node?.name == "bluebug" {
+            resetGame()
+        } else if contact.bodyA.node?.name == "bugcatcher_blue" && contact.bodyB.node?.name == "bluebug" {
+            secondBody = contact.bodyB
+            secondBody.node?.removeFromParent()
+            // UPDATE SCORE
         }
     }
     
     // MARK: - Private Funtions
     
+    func resetGame() {
+        if let scene = StartScene(fileNamed: "StartScene") {
+            scene.scaleMode = .aspectFill
+            view?.presentScene(scene)
+        }
+    }
     
     func spawnBug() {
         self.scene?.addChild(bugController.spawnBug())
@@ -141,6 +166,4 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
             }
         }
     }
-    
-    
 }
