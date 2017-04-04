@@ -21,6 +21,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     var splinePoints = [CGPoint]()
     var activeDrawingLine: SKShapeNode?
     
+    var spawnTime: TimeInterval = 3.0
+    var spawnTimer: Timer?
+    
     override func didMove(to view: SKView) {
         
         
@@ -31,7 +34,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         bugController = BugController()
         
         // Set timeer to spawn new bugs
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: true)
+        spawnTimer = Timer.scheduledTimer(timeInterval: spawnTime, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: false)
         // Set timeer to remove old bugs
         Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(removeBugs), userInfo: nil, repeats: true)
         
@@ -136,6 +139,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     // MARK: - Private Funtions
     
     func resetGame() {
+        spawnTimer?.invalidate()
         if let scene = StartScene(fileNamed: "StartScene") {
             scene.scaleMode = .aspectFill
             view?.presentScene(scene)
@@ -144,6 +148,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
     func spawnBug() {
         self.scene?.addChild(bugController.spawnBug())
+        spawnTime -= 0.1
+        spawnTimer = Timer.scheduledTimer(timeInterval: spawnTime, target: self, selector: #selector(spawnBug), userInfo: nil, repeats: false)
         print("spawn")
     }
     
