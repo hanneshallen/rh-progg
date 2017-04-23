@@ -55,7 +55,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         splinePoints.removeAll()
-        guard let touch = touches.first else { return }
+        guard let touch = touches.first,
+        let point = touches.first?.location(in: self)
+             else { return }
         splinePoints.append(touch.location(in: self))
     }
     

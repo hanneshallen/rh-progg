@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4A31351EAD0BF0002E75B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31341EAD0BF0002E75B8 /* AppDelegate.swift */; };
+		EC4A31371EAD0BF0002E75B8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31361EAD0BF0002E75B8 /* GameScene.sks */; };
+		EC4A31391EAD0BF0002E75B8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31381EAD0BF0002E75B8 /* Actions.sks */; };
+		EC4A313B1EAD0BF0002E75B8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313A1EAD0BF0002E75B8 /* GameScene.swift */; };
+		EC4A313D1EAD0BF0002E75B8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313C1EAD0BF0002E75B8 /* GameViewController.swift */; };
+		EC4A31401EAD0BF0002E75B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A313E1EAD0BF0002E75B8 /* Main.storyboard */; };
+		EC4A31421EAD0BF0002E75B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31411EAD0BF0002E75B8 /* Assets.xcassets */; };
+		EC4A31451EAD0BF0002E75B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31431EAD0BF0002E75B8 /* LaunchScreen.storyboard */; };
+		EC4A31501EAD0BF0002E75B8 /* TouchTrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314F1EAD0BF0002E75B8 /* TouchTrisTests.swift */; };
+		EC4A315B1EAD0BF0002E75B8 /* TouchTrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A315A1EAD0BF0002E75B8 /* TouchTrisUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4A314C1EAD0BF0002E75B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4A31291EAD0BF0002E75B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4A31301EAD0BF0002E75B8;
+			remoteInfo = TouchTris;
+		};
+		EC4A31571EAD0BF0002E75B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4A31291EAD0BF0002E75B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4A31301EAD0BF0002E75B8;
+			remoteInfo = TouchTris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC4A31311EAD0BF0002E75B8 /* TouchTris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A31341EAD0BF0002E75B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC4A31361EAD0BF0002E75B8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EC4A31381EAD0BF0002E75B8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		EC4A313A1EAD0BF0002E75B8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EC4A313C1EAD0BF0002E75B8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EC4A313F1EAD0BF0002E75B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC4A31411EAD0BF0002E75B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC4A31441EAD0BF0002E75B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC4A31461EAD0BF0002E75B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4A314B1EAD0BF0002E75B8 /* TouchTrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A314F1EAD0BF0002E75B8 /* TouchTrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrisTests.swift; sourceTree = "<group>"; };
+		EC4A31511EAD0BF0002E75B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4A31561EAD0BF0002E75B8 /* TouchTrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A315A1EAD0BF0002E75B8 /* TouchTrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrisUITests.swift; sourceTree = "<group>"; };
+		EC4A315C1EAD0BF0002E75B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4A312E1EAD0BF0002E75B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31481EAD0BF0002E75B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31531EAD0BF0002E75B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4A31281EAD0BF0002E75B8 = {
+			isa = PBXGroup;
+			children = (
+				EC4A31331EAD0BF0002E75B8 /* TouchTris */,
+				EC4A314E1EAD0BF0002E75B8 /* TouchTrisTests */,
+				EC4A31591EAD0BF0002E75B8 /* TouchTrisUITests */,
+				EC4A31321EAD0BF0002E75B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4A31321EAD0BF0002E75B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31311EAD0BF0002E75B8 /* TouchTris.app */,
+				EC4A314B1EAD0BF0002E75B8 /* TouchTrisTests.xctest */,
+				EC4A31561EAD0BF0002E75B8 /* TouchTrisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4A31331EAD0BF0002E75B8 /* TouchTris */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31341EAD0BF0002E75B8 /* AppDelegate.swift */,
+				EC4A31361EAD0BF0002E75B8 /* GameScene.sks */,
+				EC4A31381EAD0BF0002E75B8 /* Actions.sks */,
+				EC4A313A1EAD0BF0002E75B8 /* GameScene.swift */,
+				EC4A313C1EAD0BF0002E75B8 /* GameViewController.swift */,
+				EC4A313E1EAD0BF0002E75B8 /* Main.storyboard */,
+				EC4A31411EAD0BF0002E75B8 /* Assets.xcassets */,
+				EC4A31431EAD0BF0002E75B8 /* LaunchScreen.storyboard */,
+				EC4A31461EAD0BF0002E75B8 /* Info.plist */,
+			);
+			path = TouchTris;
+			sourceTree = "<group>";
+		};
+		EC4A314E1EAD0BF0002E75B8 /* TouchTrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A314F1EAD0BF0002E75B8 /* TouchTrisTests.swift */,
+				EC4A31511EAD0BF0002E75B8 /* Info.plist */,
+			);
+			path = TouchTrisTests;
+			sourceTree = "<group>";
+		};
+		EC4A31591EAD0BF0002E75B8 /* TouchTrisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A315A1EAD0BF0002E75B8 /* TouchTrisUITests.swift */,
+				EC4A315C1EAD0BF0002E75B8 /* Info.plist */,
+			);
+			path = TouchTrisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4A31301EAD0BF0002E75B8 /* TouchTris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A315F1EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTris" */;
+			buildPhases = (
+				EC4A312D1EAD0BF0002E75B8 /* Sources */,
+				EC4A312E1EAD0BF0002E75B8 /* Frameworks */,
+				EC4A312F1EAD0BF0002E75B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchTris;
+			productName = TouchTris;
+			productReference = EC4A31311EAD0BF0002E75B8 /* TouchTris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC4A314A1EAD0BF0002E75B8 /* TouchTrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A31621EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisTests" */;
+			buildPhases = (
+				EC4A31471EAD0BF0002E75B8 /* Sources */,
+				EC4A31481EAD0BF0002E75B8 /* Frameworks */,
+				EC4A31491EAD0BF0002E75B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4A314D1EAD0BF0002E75B8 /* PBXTargetDependency */,
+			);
+			name = TouchTrisTests;
+			productName = TouchTrisTests;
+			productReference = EC4A314B1EAD0BF0002E75B8 /* TouchTrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC4A31551EAD0BF0002E75B8 /* TouchTrisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A31651EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisUITests" */;
+			buildPhases = (
+				EC4A31521EAD0BF0002E75B8 /* Sources */,
+				EC4A31531EAD0BF0002E75B8 /* Frameworks */,
+				EC4A31541EAD0BF0002E75B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4A31581EAD0BF0002E75B8 /* PBXTargetDependency */,
+			);
+			name = TouchTrisUITests;
+			productName = TouchTrisUITests;
+			productReference = EC4A31561EAD0BF0002E75B8 /* TouchTrisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4A31291EAD0BF0002E75B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Prograsmus Studios";
+				TargetAttributes = {
+					EC4A31301EAD0BF0002E75B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC4A314A1EAD0BF0002E75B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC4A31301EAD0BF0002E75B8;
+					};
+					EC4A31551EAD0BF0002E75B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC4A31301EAD0BF0002E75B8;
+					};
+				};
+			};
+			buildConfigurationList = EC4A312C1EAD0BF0002E75B8 /* Build configuration list for PBXProject "TouchTris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4A31281EAD0BF0002E75B8;
+			productRefGroup = EC4A31321EAD0BF0002E75B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4A31301EAD0BF0002E75B8 /* TouchTris */,
+				EC4A314A1EAD0BF0002E75B8 /* TouchTrisTests */,
+				EC4A31551EAD0BF0002E75B8 /* TouchTrisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4A312F1EAD0BF0002E75B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A31401EAD0BF0002E75B8 /* Main.storyboard in Resources */,
+				EC4A31371EAD0BF0002E75B8 /* GameScene.sks in Resources */,
+				EC4A31421EAD0BF0002E75B8 /* Assets.xcassets in Resources */,
+				EC4A31451EAD0BF0002E75B8 /* LaunchScreen.storyboard in Resources */,
+				EC4A31391EAD0BF0002E75B8 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31491EAD0BF0002E75B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31541EAD0BF0002E75B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4A312D1EAD0BF0002E75B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A313B1EAD0BF0002E75B8 /* GameScene.swift in Sources */,
+				EC4A313D1EAD0BF0002E75B8 /* GameViewController.swift in Sources */,
+				EC4A31351EAD0BF0002E75B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31471EAD0BF0002E75B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A31501EAD0BF0002E75B8 /* TouchTrisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31521EAD0BF0002E75B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A315B1EAD0BF0002E75B8 /* TouchTrisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4A314D1EAD0BF0002E75B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4A31301EAD0BF0002E75B8 /* TouchTris */;
+			targetProxy = EC4A314C1EAD0BF0002E75B8 /* PBXContainerItemProxy */;
+		};
+		EC4A31581EAD0BF0002E75B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4A31301EAD0BF0002E75B8 /* TouchTris */;
+			targetProxy = EC4A31571EAD0BF0002E75B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC4A313E1EAD0BF0002E75B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4A313F1EAD0BF0002E75B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4A31431EAD0BF0002E75B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4A31441EAD0BF0002E75B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4A315D1EAD0BF0002E75B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC4A315E1EAD0BF0002E75B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4A31601EAD0BF0002E75B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchTris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC4A31611EAD0BF0002E75B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchTris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC4A31631EAD0BF0002E75B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchTrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTris.app/TouchTris";
+			};
+			name = Debug;
+		};
+		EC4A31641EAD0BF0002E75B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchTrisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTris.app/TouchTris";
+			};
+			name = Release;
+		};
+		EC4A31661EAD0BF0002E75B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TouchTrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTrisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TouchTris;
+			};
+			name = Debug;
+		};
+		EC4A31671EAD0BF0002E75B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TouchTrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTrisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TouchTris;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4A312C1EAD0BF0002E75B8 /* Build configuration list for PBXProject "TouchTris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A315D1EAD0BF0002E75B8 /* Debug */,
+				EC4A315E1EAD0BF0002E75B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4A315F1EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A31601EAD0BF0002E75B8 /* Debug */,
+				EC4A31611EAD0BF0002E75B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC4A31621EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A31631EAD0BF0002E75B8 /* Debug */,
+				EC4A31641EAD0BF0002E75B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC4A31651EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A31661EAD0BF0002E75B8 /* Debug */,
+				EC4A31671EAD0BF0002E75B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4A31291EAD0BF0002E75B8 /* Project object */;
+}
