@@ -244,6 +244,7 @@
 					};
 					EC566DC71E8C26BA0061E668 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZQEJKC3867;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EC566DA21E8C26BA0061E668;
 					};
@@ -521,7 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQEJKC3867;
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;
@@ -535,7 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQEJKC3867;
 				INFOPLIST_FILE = BouncyBugsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.BouncyBugsUITests;

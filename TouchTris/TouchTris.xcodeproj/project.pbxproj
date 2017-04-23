@@ -425,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TouchTris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TouchTris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.TouchTris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +519,7 @@
 				EC4A31611EAD0BF0002E75B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC4A31621EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +528,7 @@
 				EC4A31641EAD0BF0002E75B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC4A31651EAD0BF0002E75B8 /* Build configuration list for PBXNativeTarget "TouchTrisUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +537,7 @@
 				EC4A31671EAD0BF0002E75B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
