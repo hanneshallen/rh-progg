@@ -12,12 +12,15 @@ import CoreGraphics
 
 class GameScene: SKScene {
     
+    var currentScore = 0
     let numberColumns = 6
     let numberRows = 3
+    let patternDrawMatrix = [[0,0,0],[0,0,0]]
+    
     
     override func didMove(to view: SKView) {
         
-        //Små rutor heter gameSquare, stora rutor heter drawSquare, dödslinjen heter killer
+        //Små rutor heter gameSquare, stora rutor heter drawSquare, dödslinjen heter deathLine
         
         makeDrawZone(numRow: numberRows, numCol: numberColumns)
         
@@ -27,9 +30,20 @@ class GameScene: SKScene {
        
         }
     
+
+    override func update(_ currentTime: TimeInterval) {
+        
+    }
+    
+    func patternDetection(touchLocation: CGPoint) {
+        
+    }
+    
     func didTap(_ rec: UITapGestureRecognizer) {
         
         let touchLocation = rec.location(in: self.view)
+        
+        patternDetection(touchLocation: touchLocation)
         
         let sceneTouchPoint = scene?.convertPoint(fromView: touchLocation)
         let touchedNode: SKShapeNode = (scene?.atPoint(sceneTouchPoint!) as! SKShapeNode?)!
@@ -56,6 +70,10 @@ class GameScene: SKScene {
         }
     }
     
+    func scoreCount () {
+        currentScore += 1
+    }
+    
     func makeDrawZone(numRow: Int, numCol: Int) {
         
         let zoneWidth = (UIScreen.main.bounds.width * 2 ) / 3
@@ -73,6 +91,7 @@ class GameScene: SKScene {
 
                 let newRect = CGRect(x: -screenWidth + (scaleConst * zoneWidth) , y: -screenHeight+(scaleHeight * zoneHeight), width: 2*screenWidth/3, height: 2 * screenHeight/6)
                 let drawSquare = SKShapeNode(rect: newRect)
+                
                 
                 drawSquare.lineWidth = 1
                 drawSquare.strokeColor = UIColor.white
