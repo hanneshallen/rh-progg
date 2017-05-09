@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA4AA891EC22DB6005DA05D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA881EC22DB6005DA05D /* AppDelegate.swift */; };
+		ECA4AA8B1EC22DB6005DA05D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA8A1EC22DB6005DA05D /* ViewController.swift */; };
+		ECA4AA8E1EC22DB6005DA05D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4AA8C1EC22DB6005DA05D /* Main.storyboard */; };
+		ECA4AA901EC22DB6005DA05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA4AA8F1EC22DB6005DA05D /* Assets.xcassets */; };
+		ECA4AA931EC22DB6005DA05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4AA911EC22DB6005DA05D /* LaunchScreen.storyboard */; };
+		ECA4AA9E1EC22DB6005DA05D /* WorldArtProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA9D1EC22DB6005DA05D /* WorldArtProjectTests.swift */; };
+		ECA4AAA91EC22DB6005DA05D /* WorldArtProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AAA81EC22DB6005DA05D /* WorldArtProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA4AA9A1EC22DB6005DA05D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA4AA7D1EC22DB5005DA05D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA4AA841EC22DB5005DA05D;
+			remoteInfo = WorldArtProject;
+		};
+		ECA4AAA51EC22DB6005DA05D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA4AA7D1EC22DB5005DA05D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA4AA841EC22DB5005DA05D;
+			remoteInfo = WorldArtProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA4AA851EC22DB6005DA05D /* WorldArtProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldArtProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA4AA881EC22DB6005DA05D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECA4AA8A1EC22DB6005DA05D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECA4AA8D1EC22DB6005DA05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECA4AA8F1EC22DB6005DA05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA4AA921EC22DB6005DA05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECA4AA941EC22DB6005DA05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA4AA991EC22DB6005DA05D /* WorldArtProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldArtProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA4AA9D1EC22DB6005DA05D /* WorldArtProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldArtProjectTests.swift; sourceTree = "<group>"; };
+		ECA4AA9F1EC22DB6005DA05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA4AAA41EC22DB6005DA05D /* WorldArtProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldArtProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA4AAA81EC22DB6005DA05D /* WorldArtProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldArtProjectUITests.swift; sourceTree = "<group>"; };
+		ECA4AAAA1EC22DB6005DA05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA4AA821EC22DB5005DA05D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AA961EC22DB6005DA05D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AAA11EC22DB6005DA05D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA4AA7C1EC22DB5005DA05D = {
+			isa = PBXGroup;
+			children = (
+				ECA4AA871EC22DB6005DA05D /* WorldArtProject */,
+				ECA4AA9C1EC22DB6005DA05D /* WorldArtProjectTests */,
+				ECA4AAA71EC22DB6005DA05D /* WorldArtProjectUITests */,
+				ECA4AA861EC22DB6005DA05D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA4AA861EC22DB6005DA05D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4AA851EC22DB6005DA05D /* WorldArtProject.app */,
+				ECA4AA991EC22DB6005DA05D /* WorldArtProjectTests.xctest */,
+				ECA4AAA41EC22DB6005DA05D /* WorldArtProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA4AA871EC22DB6005DA05D /* WorldArtProject */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4AA881EC22DB6005DA05D /* AppDelegate.swift */,
+				ECA4AA8A1EC22DB6005DA05D /* ViewController.swift */,
+				ECA4AA8C1EC22DB6005DA05D /* Main.storyboard */,
+				ECA4AA8F1EC22DB6005DA05D /* Assets.xcassets */,
+				ECA4AA911EC22DB6005DA05D /* LaunchScreen.storyboard */,
+				ECA4AA941EC22DB6005DA05D /* Info.plist */,
+			);
+			path = WorldArtProject;
+			sourceTree = "<group>";
+		};
+		ECA4AA9C1EC22DB6005DA05D /* WorldArtProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4AA9D1EC22DB6005DA05D /* WorldArtProjectTests.swift */,
+				ECA4AA9F1EC22DB6005DA05D /* Info.plist */,
+			);
+			path = WorldArtProjectTests;
+			sourceTree = "<group>";
+		};
+		ECA4AAA71EC22DB6005DA05D /* WorldArtProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4AAA81EC22DB6005DA05D /* WorldArtProjectUITests.swift */,
+				ECA4AAAA1EC22DB6005DA05D /* Info.plist */,
+			);
+			path = WorldArtProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA4AA841EC22DB5005DA05D /* WorldArtProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA4AAAD1EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProject" */;
+			buildPhases = (
+				ECA4AA811EC22DB5005DA05D /* Sources */,
+				ECA4AA821EC22DB5005DA05D /* Frameworks */,
+				ECA4AA831EC22DB5005DA05D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldArtProject;
+			productName = WorldArtProject;
+			productReference = ECA4AA851EC22DB6005DA05D /* WorldArtProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA4AA981EC22DB6005DA05D /* WorldArtProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA4AAB01EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectTests" */;
+			buildPhases = (
+				ECA4AA951EC22DB6005DA05D /* Sources */,
+				ECA4AA961EC22DB6005DA05D /* Frameworks */,
+				ECA4AA971EC22DB6005DA05D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA4AA9B1EC22DB6005DA05D /* PBXTargetDependency */,
+			);
+			name = WorldArtProjectTests;
+			productName = WorldArtProjectTests;
+			productReference = ECA4AA991EC22DB6005DA05D /* WorldArtProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECA4AAA31EC22DB6005DA05D /* WorldArtProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA4AAB31EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectUITests" */;
+			buildPhases = (
+				ECA4AAA01EC22DB6005DA05D /* Sources */,
+				ECA4AAA11EC22DB6005DA05D /* Frameworks */,
+				ECA4AAA21EC22DB6005DA05D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA4AAA61EC22DB6005DA05D /* PBXTargetDependency */,
+			);
+			name = WorldArtProjectUITests;
+			productName = WorldArtProjectUITests;
+			productReference = ECA4AAA41EC22DB6005DA05D /* WorldArtProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA4AA7D1EC22DB5005DA05D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Prograsmus Studios";
+				TargetAttributes = {
+					ECA4AA841EC22DB5005DA05D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G9LHUAAZMX;
+						ProvisioningStyle = Automatic;
+					};
+					ECA4AA981EC22DB6005DA05D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECA4AA841EC22DB5005DA05D;
+					};
+					ECA4AAA31EC22DB6005DA05D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECA4AA841EC22DB5005DA05D;
+					};
+				};
+			};
+			buildConfigurationList = ECA4AA801EC22DB5005DA05D /* Build configuration list for PBXProject "WorldArtProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA4AA7C1EC22DB5005DA05D;
+			productRefGroup = ECA4AA861EC22DB6005DA05D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA4AA841EC22DB5005DA05D /* WorldArtProject */,
+				ECA4AA981EC22DB6005DA05D /* WorldArtProjectTests */,
+				ECA4AAA31EC22DB6005DA05D /* WorldArtProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA4AA831EC22DB5005DA05D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA4AA931EC22DB6005DA05D /* LaunchScreen.storyboard in Resources */,
+				ECA4AA901EC22DB6005DA05D /* Assets.xcassets in Resources */,
+				ECA4AA8E1EC22DB6005DA05D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AA971EC22DB6005DA05D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AAA21EC22DB6005DA05D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA4AA811EC22DB5005DA05D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA4AA8B1EC22DB6005DA05D /* ViewController.swift in Sources */,
+				ECA4AA891EC22DB6005DA05D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AA951EC22DB6005DA05D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA4AA9E1EC22DB6005DA05D /* WorldArtProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4AAA01EC22DB6005DA05D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA4AAA91EC22DB6005DA05D /* WorldArtProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA4AA9B1EC22DB6005DA05D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA4AA841EC22DB5005DA05D /* WorldArtProject */;
+			targetProxy = ECA4AA9A1EC22DB6005DA05D /* PBXContainerItemProxy */;
+		};
+		ECA4AAA61EC22DB6005DA05D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA4AA841EC22DB5005DA05D /* WorldArtProject */;
+			targetProxy = ECA4AAA51EC22DB6005DA05D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA4AA8C1EC22DB6005DA05D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA4AA8D1EC22DB6005DA05D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA4AA911EC22DB6005DA05D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA4AA921EC22DB6005DA05D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA4AAAB1EC22DB6005DA05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA4AAAC1EC22DB6005DA05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA4AAAE1EC22DB6005DA05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
+				INFOPLIST_FILE = WorldArtProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ECA4AAAF1EC22DB6005DA05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9LHUAAZMX;
+				INFOPLIST_FILE = WorldArtProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ECA4AAB11EC22DB6005DA05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WorldArtProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldArtProject.app/WorldArtProject";
+			};
+			name = Debug;
+		};
+		ECA4AAB21EC22DB6005DA05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WorldArtProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldArtProject.app/WorldArtProject";
+			};
+			name = Release;
+		};
+		ECA4AAB41EC22DB6005DA05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorldArtProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorldArtProject;
+			};
+			name = Debug;
+		};
+		ECA4AAB51EC22DB6005DA05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorldArtProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prograsmus.WorldArtProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorldArtProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA4AA801EC22DB5005DA05D /* Build configuration list for PBXProject "WorldArtProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA4AAAB1EC22DB6005DA05D /* Debug */,
+				ECA4AAAC1EC22DB6005DA05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA4AAAD1EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA4AAAE1EC22DB6005DA05D /* Debug */,
+				ECA4AAAF1EC22DB6005DA05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA4AAB01EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA4AAB11EC22DB6005DA05D /* Debug */,
+				ECA4AAB21EC22DB6005DA05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA4AAB31EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA4AAB41EC22DB6005DA05D /* Debug */,
+				ECA4AAB51EC22DB6005DA05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECA4AA7D1EC22DB5005DA05D /* Project object */;
+}
