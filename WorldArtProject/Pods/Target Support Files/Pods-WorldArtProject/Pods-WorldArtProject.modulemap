@@ -1,0 +1,6 @@
+framework module Pods_WorldArtProject {
+  umbrella header "Pods-WorldArtProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
