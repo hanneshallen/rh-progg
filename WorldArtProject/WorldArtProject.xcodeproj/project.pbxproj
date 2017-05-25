@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424DC24A4294B766B61A2C73 /* Pods_WorldArtProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF5A4337C56CE9C17EF41CC /* Pods_WorldArtProject.framework */; };
 		ECA4AA891EC22DB6005DA05D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA881EC22DB6005DA05D /* AppDelegate.swift */; };
 		ECA4AA8B1EC22DB6005DA05D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA8A1EC22DB6005DA05D /* ViewController.swift */; };
 		ECA4AA8E1EC22DB6005DA05D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4AA8C1EC22DB6005DA05D /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		ECA4AA931EC22DB6005DA05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4AA911EC22DB6005DA05D /* LaunchScreen.storyboard */; };
 		ECA4AA9E1EC22DB6005DA05D /* WorldArtProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AA9D1EC22DB6005DA05D /* WorldArtProjectTests.swift */; };
 		ECA4AAA91EC22DB6005DA05D /* WorldArtProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4AAA81EC22DB6005DA05D /* WorldArtProjectUITests.swift */; };
+		ECE31C551ED77B5B0067E269 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECE31C541ED77B5B0067E269 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A39FAC0631DA0FBA1FBA6F19 /* Pods-WorldArtProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldArtProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldArtProject/Pods-WorldArtProject.debug.xcconfig"; sourceTree = "<group>"; };
+		A40B6DBC72F4BD27E65D34EF /* Pods-WorldArtProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldArtProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldArtProject/Pods-WorldArtProject.release.xcconfig"; sourceTree = "<group>"; };
+		BCF5A4337C56CE9C17EF41CC /* Pods_WorldArtProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldArtProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA4AA851EC22DB6005DA05D /* WorldArtProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldArtProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA4AA881EC22DB6005DA05D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA4AA8A1EC22DB6005DA05D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		ECA4AAA41EC22DB6005DA05D /* WorldArtProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldArtProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA4AAA81EC22DB6005DA05D /* WorldArtProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldArtProjectUITests.swift; sourceTree = "<group>"; };
 		ECA4AAAA1EC22DB6005DA05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE31C541ED77B5B0067E269 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424DC24A4294B766B61A2C73 /* Pods_WorldArtProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D13F1946679A4B986AB520D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A39FAC0631DA0FBA1FBA6F19 /* Pods-WorldArtProject.debug.xcconfig */,
+				A40B6DBC72F4BD27E65D34EF /* Pods-WorldArtProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AADE84FA96ABC424C71114F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF5A4337C56CE9C17EF41CC /* Pods_WorldArtProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECA4AA7C1EC22DB5005DA05D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				ECA4AA9C1EC22DB6005DA05D /* WorldArtProjectTests */,
 				ECA4AAA71EC22DB6005DA05D /* WorldArtProjectUITests */,
 				ECA4AA861EC22DB6005DA05D /* Products */,
+				6D13F1946679A4B986AB520D /* Pods */,
+				9AADE84FA96ABC424C71114F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +129,7 @@
 				ECA4AA8F1EC22DB6005DA05D /* Assets.xcassets */,
 				ECA4AA911EC22DB6005DA05D /* LaunchScreen.storyboard */,
 				ECA4AA941EC22DB6005DA05D /* Info.plist */,
+				ECE31C541ED77B5B0067E269 /* GoogleService-Info.plist */,
 			);
 			path = WorldArtProject;
 			sourceTree = "<group>";
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECA4AAAD1EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProject" */;
 			buildPhases = (
+				C8E2DF288EFE61175EE5D06F /* [CP] Check Pods Manifest.lock */,
 				ECA4AA811EC22DB5005DA05D /* Sources */,
 				ECA4AA821EC22DB5005DA05D /* Frameworks */,
 				ECA4AA831EC22DB5005DA05D /* Resources */,
+				71D2D23C1B5CA4C0CB8EFA2D /* [CP] Embed Pods Frameworks */,
+				55CC9A12D10F0368BE458957 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +266,7 @@
 				ECA4AA931EC22DB6005DA05D /* LaunchScreen.storyboard in Resources */,
 				ECA4AA901EC22DB6005DA05D /* Assets.xcassets in Resources */,
 				ECA4AA8E1EC22DB6005DA05D /* Main.storyboard in Resources */,
+				ECE31C551ED77B5B0067E269 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +285,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55CC9A12D10F0368BE458957 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldArtProject/Pods-WorldArtProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D2D23C1B5CA4C0CB8EFA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldArtProject/Pods-WorldArtProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E2DF288EFE61175EE5D06F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECA4AA811EC22DB5005DA05D /* Sources */ = {
@@ -411,6 +490,7 @@
 		};
 		ECA4AAAE1EC22DB6005DA05D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39FAC0631DA0FBA1FBA6F19 /* Pods-WorldArtProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9LHUAAZMX;
@@ -424,6 +504,7 @@
 		};
 		ECA4AAAF1EC22DB6005DA05D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40B6DBC72F4BD27E65D34EF /* Pods-WorldArtProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9LHUAAZMX;
@@ -508,6 +589,7 @@
 				ECA4AAAF1EC22DB6005DA05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA4AAB01EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +598,7 @@
 				ECA4AAB21EC22DB6005DA05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA4AAB31EC22DB6005DA05D /* Build configuration list for PBXNativeTarget "WorldArtProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +607,7 @@
 				ECA4AAB51EC22DB6005DA05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
