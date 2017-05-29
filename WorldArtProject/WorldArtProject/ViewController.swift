@@ -46,34 +46,53 @@ class ViewController: UIViewController {
         
         firebaseDbRef = Database.database().reference()
         
-        firebaseDbRef.observe(.childAdded, with: { (snapshot) -> Void in
+        firebaseDbRef.child("drawing").child("rhdev").observe(.childAdded, with: { (snapshot) -> Void in
             
-            for child in snapshot.childSnapshot(forPath: "rhdev").children {
+            print("Child added \(snapshot.childrenCount)")
+            
+            var pointline = [CGPoint]()
+            
+            for point in snapshot.children {
                 
-                if let line = child as? DataSnapshot {
+                if let pointSnap = point as? DataSnapshot,
+                    let pointJson = pointSnap.value as? [String: Any],
+                    let x = pointJson["x"],
+                    let y = pointJson["y"] {
                     
-                    var pointline = [CGPoint]()
-                    
-                    for point in line.children {
-                        
-                        if let pointSnap = point as? DataSnapshot,
-                            let pointJson = pointSnap.value as? [String: Any],
-                            let x = pointJson["x"],
-                            let y = pointJson["y"] {
-                            
-                            pointline.append(CGPoint(x: x as! CGFloat, y: y as! CGFloat))
-                        }
-                    }
-                    for i in 1..<pointline.count {
-                        self.drawLine(from: pointline[i - 1], to: pointline[i])
-                    }
+                    pointline.append(CGPoint(x: x as! CGFloat, y: y as! CGFloat))
                 }
-                
+            }
+            self.drawLine(between: pointline)
+
+            
+//            for child in snapshot.childSnapshot(forPath: "rhdev").children {
+//
+//                if let line = child as? DataSnapshot {
+//
+//                    print(line.childrenCount)
+//
+//                    var pointline = [CGPoint]()
+//                    
+//                    for point in line.children {
+//                        
+//                        if let pointSnap = point as? DataSnapshot,
+//                            let pointJson = pointSnap.value as? [String: Any],
+//                            let x = pointJson["x"],
+//                            let y = pointJson["y"] {
+//                            
+//                            pointline.append(CGPoint(x: x as! CGFloat, y: y as! CGFloat))
+//                        }
+//                    }
+//                    for i in 1..<pointline.count {
+//                        self.drawLine(from: pointline[i - 1], to: pointline[i])
+//                    }
+//                }
+            
 //                var points = [CGPoint]()
 //                for point in (child as AnyObject).children {
 //                    points.append(CGPoint(x: point("x"), y: point("y"))
 //                }
-            }
+//            }
             
         })
     }
@@ -154,6 +173,27 @@ class ViewController: UIViewController {
         imageView.alpha = 1.0
         UIGraphicsEndImageContext()
     }
+
+    private func drawLine(between points: [CGPoint]) {
+        UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, 0)
+        
+        imageView.image?.draw(in: imageView.bounds)
+        
+        let context = UIGraphicsGetCurrentContext()
+        
+        context?.addLines(between: points)
+        
+        context?.setLineCap(CGLineCap.round)
+        context?.setLineWidth(1.0)
+        context?.setStrokeColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+        context?.setBlendMode(CGBlendMode.normal)
+        context?.strokePath()
+        
+        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
+        imageView.alpha = 1.0
+        UIGraphicsEndImageContext()
+    }
+
     
     private func drawPixel(atPoint point: CGPoint) {
         let touchedPixel = pixel(forPoint: point)
