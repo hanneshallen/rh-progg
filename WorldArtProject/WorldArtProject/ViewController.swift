@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         rightSwipe.cancelsTouchesInView = true
 //        self.view.addGestureRecognizer(rightSwipe)
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.didTap(_:)))
+        
+        view.addGestureRecognizer(tap)
+        
         
         firebaseDbRef = Database.database().reference()
         
@@ -77,6 +81,8 @@ class ViewController: UIViewController {
             
         })
     }
+    
+    
     
     override func viewDidLayoutSubviews() {
         computePixelSize()
@@ -120,6 +126,14 @@ class ViewController: UIViewController {
         drawLine(from: previousPoint, to: point)
         currentLine.append(point)
         self.previousPoint = point
+    }
+    
+    func didTap(_ sender: UITapGestureRecognizer) {
+        let touchPoint = sender.location(in: self.view)
+        let x_loc = touchPoint.x
+        let y_loc = touchPoint.y
+        let label = UITextField(frame: CGRect(x: x_loc, y: y_loc, width: 200, height: 21))
+        self.view.addSubview(label)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -188,6 +202,8 @@ class ViewController: UIViewController {
         return CGRect(x: pixel.x * Int(width), y: pixel.y * Int(width), width: Int(width), height: Int(width))
     }
 
-
+    private func textLetter(startPoint: CGPoint) {
+        
+    }
 }
 
