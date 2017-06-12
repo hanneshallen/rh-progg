@@ -17,10 +17,19 @@ class ViewController: UIViewController {
     var width: CGFloat!
     var previousPixel: (x: Int, y: Int)?
     var colorIndex: Int = 0
-    var colors: [UIColor] = [.black, .white, .red, .green, .blue]
+    var currentState: Int = 0
+    
+    var newImageView: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+    
+    var states = ["panState", "drawState", "textState"]
+    let panImage = UIImage(named: "move.png")
+    let drawImage = UIImage(named: "edit-2.png")
+    let textImage = UIImage(named: "type.png")
+    var imageState: [UIImage] = []
     var rightSwipe: UIScreenEdgePanGestureRecognizer!
     var leftSwipe: UIScreenEdgePanGestureRecognizer!
     
+    var currentTextField: UITextField?
     
     // NEW
     var previousPoint: CGPoint?
@@ -32,18 +41,26 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         computePixelSize()
+        
+        imageState = [panImage!, drawImage!, textImage!]
+        
+        
         leftSwipe = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(didSwipeLeft(_:)))
         leftSwipe.edges = .left
         leftSwipe.cancelsTouchesInView = true
-//        self.view.addGestureRecognizer(leftSwipe)
+        self.view.addGestureRecognizer(leftSwipe)
+        
         rightSwipe = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(didSwipeRight(_:)))
         rightSwipe.edges = .right
         rightSwipe.cancelsTouchesInView = true
-//        self.view.addGestureRecognizer(rightSwipe)
+        self.view.addGestureRecognizer(rightSwipe)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.didTap(_:)))
+        
         
         view.addGestureRecognizer(tap)
         
@@ -107,25 +124,51 @@ class ViewController: UIViewController {
         computePixelSize()
     }
     
+    
+    
+    
+    
+    //VISA BILD PÅ SWIPE
     func didSwipeLeft(_ rec: UISwipeGestureRecognizer) {
-        switch rec.state {
-        case .began:
-            colorIndex = (colorIndex + 1) % colors.count
-        default:
-            break
+        if rec.state == UIGestureRecognizerState.ended {
+            currentState = (currentState + 1) % states.count
+            displayStateImage(indexNumber: currentState)
+            print(currentState)
+            print(states[currentState])
         }
     }
     
     func didSwipeRight(_ rec: UISwipeGestureRecognizer) {
-        switch rec.state {
-        case .began:
-            let newIndex = colorIndex - 1
-            colorIndex = newIndex >= 0 ? newIndex : colors.count - 1
-        default:
-            break
+        if rec.state == UIGestureRecognizerState.ended {
+            currentState = (currentState + 2) % states.count
+            displayStateImage(indexNumber: currentState)
+            print(currentState)
+            print(states[currentState])
         }
     }
-
+    
+    func displayStateImage (indexNumber: Int) {
+        let centerX = self.view.center.x - newImageView.frame.size.width/2
+        let centerY = self.view.center.y - newImageView.frame.size.height/2
+        
+        newImageView.frame = CGRect(x: centerX, y: centerY, width: 100, height: 100)
+        newImageView.image = imageState[indexNumber]
+        newImageView.alpha = 1
+        newImageView.backgroundColor = UIColor.lightGray
+        newImageView.backgroundColor?.withAlphaComponent(0.2)
+        newImageView.layer.cornerRadius = 10
+        self.view.addSubview(newImageView)
+        UIView.animate(withDuration: 1.0, animations: {
+            self.newImageView.alpha = 0
+        })
+        
+    }
+    
+    //SLUT VISA BILD SWIPE
+    
+    
+    
+    
     private func computePixelSize() {
         width = imageView.frame.width / 20.0
     }
@@ -147,12 +190,32 @@ class ViewController: UIViewController {
         self.previousPoint = point
     }
     
+    
     func didTap(_ sender: UITapGestureRecognizer) {
+        
+        if let currentTextField = currentTextField {
+            currentTextField.resignFirstResponder()
+            print("HANNES")
+            self.currentTextField = nil
+            return
+        }
+        
         let touchPoint = sender.location(in: self.view)
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let widthThing = screenWidth - touchPoint.x
+        print ("RASMUS")
         let x_loc = touchPoint.x
         let y_loc = touchPoint.y
-        let label = UITextField(frame: CGRect(x: x_loc, y: y_loc, width: 200, height: 21))
+        let label = UITextField(frame: CGRect(x: x_loc, y: y_loc, width: widthThing, height: 21))
+        label.minimumFontSize = 10
+        label.adjustsFontSizeToFitWidth = false
+        label.autocapitalizationType = .allCharacters
+        
+        currentTextField = label
+        
         self.view.addSubview(label)
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -223,7 +286,7 @@ class ViewController: UIViewController {
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(1)
-        context?.setFillColor(colors[colorIndex].cgColor)
+ //       context?.setFillColor(colors[colorIndex].cgColor)
         context?.fillPath()
         
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
